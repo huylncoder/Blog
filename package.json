@@ -1,44 +1,52 @@
 {
-    "name": "blog",
-    "version": "1.0.0",
-    "description": "",
-    "main": "src/index.js",
-    "scripts": {
-        "beautiful": "lint-staged",
-        "start": "nodemon --inspect src/index.js",
-        "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/huylncoder/Blog.git"
-    },
-    "keywords": [
-        "nodejs",
-        "blog",
-        "blog",
-        "nodejs"
-    ],
-    "author": "huyln",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/huylncoder/Blog/issues"
-    },
-    "homepage": "https://github.com/huylncoder/Blog#readme",
-    "lint-staged": {
-        "src/**/*.{js, scss, json}": "prettier --single-quote --trailing-comma all --write --tab-width 4"
-    },
-    "dependencies": {
-        "bootstrap": "^5.3.7",
-        "express": "^5.1.0",
-        "express-handlebars": "^8.0.3",
-        "morgan": "^1.10.1",
-        "nodemon": "^3.1.10",
-        "sass": "^1.89.2"
-    },
-    "devDependencies": {
-        "husky": "^9.1.7",
-        "lint-staged": "^16.1.2",
-        "prettier": "^3.6.2"
-    }
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "prepare": "husky",
+    "beautiful": "lint-staged",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huylncoder/Blog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blog",
+    "blog",
+    "nodejs"
+  ],
+  "author": "huyln",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huylncoder/Blog/issues"
+  },
+  "homepage": "https://github.com/huylncoder/Blog#readme",
+  "lint-staged": {
+    "src/**/*.{js, scss, json}": "prettier --write"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "semi": true,
+    "printWidth": 120
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "sass": "^1.89.2"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2"
+  }
 }
