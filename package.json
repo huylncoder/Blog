@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "prepare": "husky",
-    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,23 +26,16 @@
   },
   "homepage": "https://github.com/huylncoder/Blog#readme",
   "lint-staged": {
-    "src/**/*.{js,scss,json}": "prettier --write"
+    "src/**/*.{js,scss,json}": "prettier --write --single-quote --trailing-comma all --tab-width 4"
   },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "tabWidth": 4,
-    "semi": true,
-    "printWidth": 120
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.7",
-    "express": "^5.1.0",
-    "express-handlebars": "^8.0.3",
-    "morgan": "^1.10.1",
-    "nodemon": "^3.1.10",
-    "sass": "^1.89.2"
-  },
+      "dependencies": {
+        "bootstrap": "^5.3.7",
+              "express": "^5.1.0",
+        "express-handlebars": "^8.0.3",
+        "morgan": "^1.10.1",
+        "nodemon": "^3.1.10",
+        "sass": "^1.89.2"
+      },
   "devDependencies": {
         
           "husky": "^9.1.7",
