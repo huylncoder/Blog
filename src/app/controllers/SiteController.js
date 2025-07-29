@@ -1,11 +1,11 @@
 class SiteController {
     // [GET] /
     homePage(req, res) {
-        res.render("home");
+        res.render('home');
     }
     // [GET] /news/:slug
     search(req, res) {
-        res.render("search");
+        res.render('search');
     }
 }
 
