@@ -26,7 +26,7 @@
     },
     "homepage": "https://github.com/huylncoder/Blog#readme",
     "lint-staged": {
-        "src/**/*.{js,scss,json}": "prettier --write"
+        "*.{js,scss,json}": "prettier --write"
     },
     "dependencies": {
         "bootstrap": "^5.3.7",
@@ -36,9 +36,9 @@
         "nodemon": "^3.1.10",
         "sass": "^1.89.2"
     },
-        "devDependencies": {
-            "husky": "^9.1.7",
-                     "lint-staged": "^16.1.2",
-            "prettier": "^3.6.2"
-        }
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.2",
+        "prettier": "^3.6.2"
+    }
 }
