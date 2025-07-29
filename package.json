@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/huylncoder/Blog#readme",
   "lint-staged": {
-    "src/**/*.{js, scss, json}": "prettier --write"
+    "src/**/*.{js,scss,json}": "prettier --write"
   },
   "prettier": {
     "singleQuote": true,
