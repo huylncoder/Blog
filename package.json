@@ -1,5 +1,5 @@
 {
-    "name": "blog",
+    "name": "DevSpark",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
@@ -15,8 +15,8 @@
     },
     "keywords": [
         "nodejs",
-        "blog",
-        "blog",
+        "DevSpark",
+        "DevSpark",
         "nodejs"
     ],
     "author": "huyln",
@@ -32,6 +32,7 @@
         "bootstrap": "^5.3.7",
         "express": "^5.1.0",
         "express-handlebars": "^8.0.3",
+        "mongoose": "^8.16.5",
         "morgan": "^1.10.1",
         "nodemon": "^3.1.10",
         "sass": "^1.89.2"

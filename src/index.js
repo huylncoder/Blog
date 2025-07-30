@@ -1,9 +1,13 @@
 const express = require('express');
-const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const path = require('path');
+const morgan = require('morgan');
 
 const route = require('./routes');
+const db = require('./config/database/connectDB');
+
+// connect to database
+db.connect();
 
 // Gọi hàm express nó sẽ trả về đối tượng đại diện ứng dụng NodeJS để xây dựng(web)
 const app = express();
@@ -27,7 +31,7 @@ app.engine(
     }),
 );
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, ' resources/views'));
+app.set('views', path.join(__dirname, 'resources/views'));
 
 // route init
 route(app);
