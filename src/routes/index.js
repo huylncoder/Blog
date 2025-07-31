@@ -1,8 +1,10 @@
-const newsRouter = require('./news.js');
-const siteRouter = require('./site.js');
+const coursesRouter = require('./courses');
+const newsRouter = require('./news');
+const siteRouter = require('./site');
 
 const route = (app) => {
     // sủ dụng router nào math với tuyến đường
+    app.use('/courses', coursesRouter);
     app.use('/news', newsRouter);
     app.use('/', siteRouter);
 };

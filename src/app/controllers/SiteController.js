@@ -4,13 +4,11 @@ class SiteController {
     // [GET] /
     async homePage(req, res) {
         try {
-            const courses = await Course.find({});
-            res.json(courses);
+            const courses = await Course.find({}).lean();
+            res.render('home', { courses });
         } catch (error) {
             res.status(400).json({ error: 'ERROR' });
         }
-
-        // res.render('home');
     }
     // [GET] /news/:slug
     search(req, res) {
